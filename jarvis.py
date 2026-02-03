@@ -210,11 +210,8 @@ def play_song(song):
 
 # ================= CONTACTS =================
 CONTACTS = {
-    "mom": "+919599257357",
-    "me": "+919897562207",
-    "chandu": "+916206916577",
-    "paltha": "+919871960357",
-    "vivek": "+917654772289"
+    "ME": +91 XXX XXX XXX
+    "FRIEND": +91 XXX XXX XXX
 }
 
 # ================= LISTEN =================
@@ -271,7 +268,7 @@ def check_birthday_and_wish():
     today = datetime.datetime.now().strftime("%d-%m")
 
     if today == profile.get("birthday"):
-        speak("Happy Birthday, Yash"
+        speak("Happy Birthday, User"
               "यह तुम्हारे लिए बहुत खास दिन है. so मुझे बताओ कि तुम्हें gift में क्या चाहिए?😊"
         )
         return True
@@ -296,7 +293,7 @@ def jarvis_listen():
     birthday_today = check_birthday_and_wish()
 
     if not birthday_today:
-        speak("Hello यश, मैं तुम्हारे लिए क्या कर सकती हूँ")
+        speak("Hello user, मैं तुम्हारे लिए क्या कर सकती हूँ")
 
 
 
@@ -360,3 +357,4 @@ def jarvis_listen():
 # ================= RUN =================
 if __name__ == "__main__":
     jarvis_listen()
+
